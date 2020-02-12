@@ -152,7 +152,7 @@ def user_stats(df):
     print(df['User Type'].value_counts())
 
     # Display counts of gender
-    # exception hadling as the data is not available for every city
+    # exception handling as the data is not available for every city
     try:
         print('counts of gender')
         print(df['Gender'].value_counts())
