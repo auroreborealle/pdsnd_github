@@ -190,14 +190,15 @@ def main():
         srt_ind = 0
         #Let the possibility of displaying raw data
         while True:
-            raw = input('\nWould you like to see raw data ? Enter yes or no.\n')
+            question = "\nWould you like to see raw data ? Enter yes or no.\n"
+            raw = input(question)
             if 'n' in raw:
                 break
             display_raw(df, srt_ind)
             srt_ind += 5
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if 'yes' in restart.lower():
             break
 
 
