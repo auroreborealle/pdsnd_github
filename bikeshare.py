@@ -17,7 +17,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    
+
     while True:
         city = input("Which city do you want to explore? Please enter 'Chicago', 'New York City' or 'Washington'. ").lower().strip()
         print()
@@ -188,7 +188,8 @@ def main():
         user_stats(df)
         srt_ind = 0
         while True:
-            raw = input('\nWould you like to see raw data ? Enter yes or no.\n')
+            question = "\nWould you like to see raw data ? Enter yes or no.\n"
+            raw = input(question)
             if 'n' in raw:
                 break
             display_raw(df, srt_ind)
