@@ -17,7 +17,7 @@ def get_filters():
     """
     print('Hello! Let\'s explore some US bikeshare data!')
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
-    
+
     while True:
         city = input("Which city do you want to explore? Please enter 'Chicago', 'New York City' or 'Washington'. ").lower().strip()
         print()
@@ -130,11 +130,11 @@ def trip_duration_stats(df):
     print('\nCalculating Trip Duration...\n')
     start_time = time.time()
 
-    # TO DO: display total travel time
+    # display total travel time
     print('total travel time:')
     print((pd.to_datetime(df['End Time']) - pd.to_datetime(df['Start Time'])).sum() )
 
-    # TO DO: display mean travel time
+    # display mean travel time
     print('mean travel time:')
     print((pd.to_datetime(df['End Time']) - pd.to_datetime(df['Start Time'])).mean() )
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -147,17 +147,17 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # TO DO: Display counts of user types
+    # Display counts of user types
     print('counts of user types')
     print(df['User Type'].value_counts())
 
-    # TO DO: Display counts of gender
+    # Display counts of gender
     try:
         print('counts of gender')
         print(df['Gender'].value_counts())
     except:
         print('There is no gender data available for this city.')
-    # TO DO: Display earliest, most recent, and most common year of birth
+    # Display earliest, most recent, and most common year of birth
     try:
         print('earliest birth year')
         print(int(df['Birth Year'].min()))
