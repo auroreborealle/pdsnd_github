@@ -196,7 +196,7 @@ def main():
             srt_ind += 5
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
-        if restart.lower() != 'yes':
+        if 'yes' in restart.lower():
             break
 
 
