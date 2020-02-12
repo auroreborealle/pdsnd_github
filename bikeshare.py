@@ -187,6 +187,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
         srt_ind = 0
+        #Let the possibility of displaying raw data
         while True:
             raw = input('\nWould you like to see raw data ? Enter yes or no.\n')
             if 'n' in raw:
