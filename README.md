@@ -1,15 +1,17 @@
-### Date created
-Include the date you created this project and README file.
+### Created on 02.12.2020
 
-### Project Title
-Replace the Project Title
+### Bikeshare project
+This project contains all the files for the bikeshare 
+project, showing statistics on bikesharing.
 
 ### Description
-Describe what your project is about and what it does
+The bikeshare project uses bikesharing databases to show you 
+interesting data on past bikesharing habits for the cities of
+Chicago, Washington or New York City.
 
 ### Files used
-Include the files used
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+This project is a Udacity project for the course "Data programming 
+with Python"
